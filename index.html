@@ -1,513 +1,502 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MQ-DIPLOMA</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MQ-DIPLOMA</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-
-
-
-<body>
-  <div class="popup-container-hidden">
-    <div class="popup-bg"></div>
-    <div class="popup-content">
-      <div class="popup-title">ваш фидбек</div>
-      <div class="select-title">Как часто вы заходите на сайт?</div>
-      <select class="popup-select">
-        <option>Почти каждый день</option>
-        <option>Каждую неделю</option>
-        <option>Раз в месяц</option>
-      </select>
-      <div class="popup-subscribe">
-        <div class="popup-subscribe-title">Вы подписаны на e-mail рассылку?</div>
-        <label class="popup-subscribe-radio">
-          <input type="radio" class="subscribe-radio" name="radio-group">
-          <span class="radio-group-text">Да</span>
-        </label>
-        <label class="popup-subscribe-radio">
-          <input type="radio" class="subscribe-radio" name="radio-group">
-          <span class="radio-group-text">Нет</span>
-        </label>
+  <body>
+    <div class="popup-container-hidden">
+      <div class="popup-bg"></div>
+      <div class="popup-content">
+        <div class="popup-title">ваш фидбек</div>
+        <div class="select-title">Как часто вы заходите на сайт?</div>
+        <select class="popup-select">
+          <option>Почти каждый день</option>
+          <option>Каждую неделю</option>
+          <option>Раз в месяц</option>
+        </select>
+        <div class="popup-subscribe">
+          <div class="popup-subscribe-title">
+            Вы подписаны на e-mail рассылку?
+          </div>
+          <label class="popup-subscribe-radio">
+            <input type="radio" class="subscribe-radio" name="radio-group" />
+            <span class="radio-group-text">Да</span>
+          </label>
+          <label class="popup-subscribe-radio">
+            <input type="radio" class="subscribe-radio" name="radio-group" />
+            <span class="radio-group-text">Нет</span>
+          </label>
+        </div>
+        <div class="popup-fidback">
+          <div class="fidback-title">
+            Расскажите, какой контенет вы хотели бы видеть на нашем сайте?
+          </div>
+          <textarea class="fidback-type" placeholder="Может, больше рецептов?" cols="30" rows="10"></textarea>
+        </div>
+        <button class="popup-send">отправить</button>
       </div>
-      <div class="popup-fidback">
-        <div class="fidback-title">Расскажите, какой контенет вы хотели бы видеть на нашем сайте?</div>
-        <textarea class="fidback-type" placeholder="Может, больше рецептов?" cols="30" rows="10"></textarea>
-      </div>
-      <button class="popup-send">отправить</button>
     </div>
-  </div>
-  <header class="header">
-    <div class="header-content">
-      <div class="header-head">
-        <div class="header-logo">
-          <img class="header-logo-pic" src="svg/noemi-logo.svg" alt="noemi">
-        </div>
+    <header class="header">
+      <div class="header-content">
+        <div class="header-head">
+          <div class="header-logo">
+            <img class="header-logo-pic" src="svg/noemi-logo.svg" alt="noemi" />
+          </div>
 
-        <nav class="header-menu">
-          <ul class="header-menu-items">
-            <li class="header-menu-item">
-              <a class="item-link" href="#0">home</a>
-            </li>
-            <li class="header-menu-item">
-              <a class="item-link" href="#0">features</a>
-            </li>
-            <li class="header-menu-item">
-              <a class="item-link" href="#0">posttypes</a>
-            </li>
-            <li class="header-menu-item">
-              <a class="item-link" href="#0">pages</a>
-            </li>
-            <li class="header-menu-item">
-              <a class="item-link" href="#0">categories</a>
-            </li>
-            <li class="header-menu-item">
-              <a class="item-link" href="#0">contact</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="burger-menu">
-          <span class="burger-menu-item"></span>
+          <nav class="header-menu">
+            <ul class="header-menu-items">
+              <li class="header-menu-item">
+                <a class="item-link" href="#0">home</a>
+              </li>
+              <li class="header-menu-item">
+                <a class="item-link" href="#0">features</a>
+              </li>
+              <li class="header-menu-item">
+                <a class="item-link" href="#0">posttypes</a>
+              </li>
+              <li class="header-menu-item">
+                <a class="item-link" href="#0">pages</a>
+              </li>
+              <li class="header-menu-item">
+                <a class="item-link" href="#0">categories</a>
+              </li>
+              <li class="header-menu-item">
+                <a class="item-link" href="#0">contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="burger-menu">
+            <span class="burger-menu-item"></span>
+          </div>
+        </div>
+        <h1 class="header-title">
+          last news about art, health, lifestyle and more
+        </h1>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="container-trends">
+        <h3 class="trends-title">сейчас в тренде</h3>
+        <div class="trends-cards">
+          <div class="trends-card-item">
+            <img class="trends-img" src="images/trend1.jpg" alt="" />
+            <div class="trends-info">
+              <ul class="trends-category">
+                <li><a href="#0" class="category">lifestyle</a></li>
+                <li><a href="#0" class="category">interior</a></li>
+              </ul>
+              <a class="trends-title-text" href="#0">сейчас в тренде: сад на подоконнике</a>
+            </div>
+          </div>
+          <div class="trends-card-item">
+            <img class="trends-img" src="images/trend2.jpg" alt="" />
+            <div class="trends-info">
+              <ul class="trends-category">
+                <li><a href="#0" class="category">food</a></li>
+              </ul>
+              <a class="trends-title-text" href="#0">сыры на красивых картинках из интернета: какие они на вкус?</a>
+            </div>
+          </div>
+          <div class="trends-card-item">
+            <img class="trends-img" src="images/trend3.jpg" alt="" />
+            <div class="trends-info">
+              <ul class="trends-category">
+                <li><a href="#0" class="category">lifestyle</a></li>
+                <li><a href="#0" class="category">travel</a></li>
+              </ul>
+              <a class="trends-title-text" href="#0">собираемсяв первый поход в горы</a>
+            </div>
+          </div>
+          <div class="trends-card-item">
+            <img class="trends-img" src="images/trend4.jpg" alt="" />
+            <div class="trends-info">
+              <ul class="trends-category">
+                <li><a href="#0" class="category">food</a></li>
+                <li><a href="#0" class="category">health</a></li>
+              </ul>
+              <a class="trends-title-text" href="#0">Сейчас в тренде: сколько витамина c в лимонах?</a>
+            </div>
+          </div>
         </div>
       </div>
-      <h1 class="header-title">last news about art, health, lifestyle and more</h1>
-    </div>
-  </header>
+    </section>
 
-  <section class="section">
-    <div class="container-trends">
-      <h3 class="trends-title">сейчас в тренде</h3>
-      <div class="trends-cards">
-        <div class="trends-card-item">
-          <img class="trends-img" src="images/trend1.jpg" alt="">
-          <div class="trends-info">
-            <ul class="trends-category">
-              <li><a href="#0" class="category">lifestyle</a></li>
-              <li><a href="#0" class="category">interior</a></li>
-            </ul>
-            <a class="trends-title-text" href="#0">сейчас в тренде: сад на подоконнике</a>
+    <div class="main">
+      <div class="news">
+        <article class="news-card">
+          <div class="news-preview">
+            <img class="news-preview-img" src="images/last-post1.jpg" alt="a man walks along the beach" />
           </div>
-        </div>
-        <div class="trends-card-item">
-          <img class="trends-img" src="images/trend2.jpg" alt="">
-          <div class="trends-info">
-            <ul class="trends-category">
-              <li><a href="#0" class="category">food</a></li>
-            </ul>
-            <a class="trends-title-text" href="#0">сыры на красивых картинках из интернета: какие они на вкус?</a>
-          </div>
-        </div>
-        <div class="trends-card-item">
-          <img class="trends-img" src="images/trend3.jpg" alt="">
-          <div class="trends-info">
-            <ul class="trends-category">
-              <li><a href="#0" class="category">lifestyle</a></li>
-              <li><a href="#0" class="category">travel</a></li>
-            </ul>
-            <a class="trends-title-text" href="#0">собираемсяв первый поход в горы</a>
-          </div>
-        </div>
-        <div class="trends-card-item">
-          <img class="trends-img" src="images/trend4.jpg" alt="">
-          <div class="trends-info">
-            <ul class="trends-category">
-              <li><a href="#0" class="category">food</a></li>
+          <div class="news-info">
+            <ul class="news-category">
+              <li><a href="#0" class="category">art</a></li>
               <li><a href="#0" class="category">health</a></li>
             </ul>
-            <a class="trends-title-text" href="#0">Сейчас в тренде: сколько витамина c в лимонах?</a>
+            <h2 class="news-title">
+              <a href="#0" class="news-title-link">Barbecue Party Tips For A Truly Amazing Event</a>
+            </h2>
+            <time class="news-date" datetime="2015-06-14">June 14, 2015</time>
+            <address class="news-autor">by Author Doe</address>
+            <div class="news-text">
+              <p>
+                Once upon a time, in an age before the Internet, the only way to meet people was to leave your home and interact with humanity.
+              </p>
+            </div>
           </div>
-        </div>
+        </article>
+        <article class="news-card">
+          <div class="news-preview">
+            <img class="news-preview-img" src="images/last-post2.jpg" alt="girl doing yoga by the sea" />
+          </div>
+          <div class="news-info">
+            <ul class="news-category">
+              <li><a href="#0" class="category">art</a></li>
+            </ul>
+            <h2 class="news-title">
+              <a href="#0" class="news-title-link">The Principles Of Scientific Cooking</a>
+            </h2>
+            <time class="news-date" datetime="2015-06-14">June 14, 2015</time>
+            <address class="news-autor">by Author Doe</address>
+            <div class="news-text">
+              <p>
+                If you're shy about going out alone, bring a book or a journal at first, and take small steps to get comfortable with the feeling.
+              </p>
+            </div>
+          </div>
+        </article>
+        <article class="news-card">
+          <div class="news-preview">
+            <img class="news-preview-img" src="images/last-post3.jpg" alt="girl at a concert" />
+          </div>
+          <div class="news-info">
+            <ul class="news-category">
+              <li>
+                <a href="#0" class="category">art</a>
+              </li>
+            </ul>
+            <h2 class="news-title">
+              <a href="#0" class="news-title-link">How To Meet That Special Someone</a>
+            </h2>
+            <time class="news-date" datetime="2015-06-14">June 14, 2015</time>
+            <address class="news-autor">by Author Doe</address>
+            <div class="news-text">
+              <p>
+                Once upon a time, in an age before the Internet, the only way to meet people was to leave your home and interact with humanity.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="news-card">
+          <div class="news-preview">
+            <img class="news-preview-img" src="images/last-post4.jpg" alt="breakfast table" />
+          </div>
+          <div class="news-info">
+            <ul class="news-category">
+              <li>
+                <a href="#0" class="category">art</a>
+              </li>
+            </ul>
+            <h2 class="news-title">
+              <a href="#0" class="news-title-link">How To Meet That Special Someone</a>
+            </h2>
+            <time class="news-date" datetime="2015-06-14">June 14, 2015</time>
+            <address class="news-autor">by Author Doe</address>
+            <div class="news-text">
+              <p>
+                Considering how long the human race existed before online dating, it looks like meeting people in real life was really working for them.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="news-card">
+          <div class="news-preview">
+            <img class="news-preview-img" src="images/last-post5.jpg" alt="text printed pillow" />
+          </div>
+          <div class="news-info">
+            <ul class="news-category">
+              <li>
+                <a href="#0" class="category">art</a>
+              </li>
+              <li>
+                <a href="#0" class="category">lifestyle</a>
+              </li>
+            </ul>
+            <h2 class="news-title">
+              <a href="#0" class="news-title-link">How To Meet That Special Someone</a>
+            </h2>
+            <time class="news-date" datetime="2015-06-14">June 14, 2015</time>
+            <address class="news-autor">by Author Doe</address>
+            <div class="news-text">
+              <p>
+                Once upon a time, in an age before the Internet, the only way to meet people was to leave your home and interact with humanity.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="news-card">
+          <div class="news-preview">
+            <img class="news-preview-img" src="images/last-post6.jpg" alt="people stand on a cliff" />
+          </div>
+          <div class="news-info">
+            <ul class="news-category">
+              <li>
+                <a href="#0" class="category">travel</a>
+              </li>
+            </ul>
+            <h2 class="news-title">
+              <a href="#0" class="news-title-link">How To Meet That Special Someone</a>
+            </h2>
+            <time class="news-date" datetime="2015-06-14">June 14, 2015</time>
+            <address class="news-autor">by Author Doe</address>
+            <div class="news-text">
+              <p>
+                Considering how long the human race existed before online dating, it looks like meeting people in real life was really working for them.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="news-card">
+          <div class="news-preview">
+            <img class="news-preview-img" src="images/last-post4.jpg" alt="breakfast table" />
+          </div>
+          <div class="news-info">
+            <ul class="news-category">
+              <li>
+                <a href="#0" class="category">art</a>
+              </li>
+            </ul>
+            <h2 class="news-title">
+              <a href="#0" class="news-title-link">How To Meet That Special Someone</a>
+            </h2>
+            <time class="news-date" datetime="2015-06-14">June 14, 2015</time>
+            <address class="news-autor">by Author Doe</address>
+            <div class="news-text">
+              <p>
+                Once upon a time, in an age before the Internet, the only way to meet people was to leave your home and interact with humanity.
+              </p>
+            </div>
+          </div>
+        </article>
       </div>
-    </div>
-  </section>
 
-  <div class="main">
-    <div class="news">
-      <article class="news-card">
-        <div class="news-preview">
-          <img class="news-preview-img" src="images/last-post1.jpg" alt="a man walks along the beach">
-        </div>
-        <div class="news-info">
-          <ul class="news-category">
-            <li><a href="#0" class="category">art</a></li>
-            <li><a href="#0" class="category">health</a></li>
-          </ul>
-          <h2 class="news-title">
-            <a href="#0" class="news-title-link">Barbecue Party Tips For A Truly Amazing Event</a>
-          </h2>
-          <time class="news-date" datetime="2015-06-14">June 14, 2015</time>
-          <address class="news-autor">by Author Doe</address>
-          <div class="news-text">
-            <p>
-              Once upon a time, in an age before the Internet, the only way to
-              meet people was to leave your home and interact with humanity.
-            </p>
+      <aside class="right-sidebar">
+        <section class="last-post">
+          <h2 class="last-post-title">recent post</h2>
+
+          <div class="last-post-cards">
+            <article class="post-card">
+              <img class="post-image" src="images/2.jpg" alt="a man walks along the beach" />
+              <div class="post-text">
+                <time class="post-date" datetime="2015-06-14">June 14, 2015</time>
+                <h3 class="post-title">
+                  <a href="#0" class="post-title-link">Lorem Ipsum now.</a>
+                </h3>
+              </div>
+            </article>
+            <article class="post-card">
+              <img class="post-image" src="images/151.jpg" alt="girl doing yoga by the sea" />
+              <div class="post-text">
+                <time class="post-date" datetime="2015-06-14">June 14, 2015</time>
+                <h2 class="post-title">
+                  <a href="#0" class="post-title-link">Lorem Ipsum Dolor available.</a>
+                </h2>
+              </div>
+            </article>
+            <article class="post-card">
+              <img class="post-image" src="images/45.jpg" alt="Eames Style Lounge Chair and radio" />
+              <div class="post-text">
+                <time class="post-date" datetime="2015-06-14">June 14, 2015</time>
+                <h3 class="post-title">
+                  <a href="#0" class="post-title-link">Lorem Ipsum available right now.</a>
+                </h3>
+              </div>
+            </article>
+            <article class="post-card">
+              <img class="post-image" src="images/501.jpg" alt="reakfast table" />
+              <div class="post-text">
+                <time class="post-date" datetime="2015-06-14">June 14, 2015</time>
+                <h3 class="post-title">
+                  <a href="#0" class="post-title-link">Lorem Ipsum available right now.</a>
+                </h3>
+              </div>
+            </article>
+            <article class="post-card">
+              <img class="post-image" src="images/7.jpg" alt="three girls under window" />
+              <div class="post-text">
+                <time class="post-date" datetime="2015-06-14">June 14, 2015</time>
+                <h3 class="post-title">
+                  <a href="#0" class="post-title-link">Lorem Ipsum available right now.</a>
+                </h3>
+              </div>
+            </article>
           </div>
-        </div>
-      </article>
-      <article class="news-card">
-        <div class="news-preview">
-          <img class="news-preview-img" src="images/last-post2.jpg" alt="girl doing yoga by the sea">
-        </div>
-        <div class="news-info">
-          <ul class="news-category">
-            <li><a href="#0" class="category">art</a></li>
-          </ul>
-          <h2 class="news-title">
-            <a href="#0" class="news-title-link">The Principles Of Scientific Cooking</a>
-          </h2>
-          <time class="news-date" datetime="2015-06-14">June 14, 2015</time>
-          <address class="news-autor">by Author Doe</address>
-          <div class="news-text">
-            <p>
-              If you're shy about going out alone, bring a book or a journal
-              at first, and take small steps to get comfortable with the
-              feeling.
-            </p>
-          </div>
-        </div>
-      </article>
-      <article class="news-card">
-        <div class="news-preview">
-          <img class="news-preview-img" src="images/last-post3.jpg" alt="girl at a concert">
-        </div>
-        <div class="news-info">
-          <ul class="news-category">
-            <li>
-              <a href="#0" class="category">art</a>
-            </li>
-          </ul>
-          <h2 class="news-title">
-            <a href="#0" class="news-title-link">How To Meet That Special Someone</a>
-          </h2>
-          <time class="news-date" datetime="2015-06-14">June 14, 2015</time>
-          <address class="news-autor">by Author Doe</address>
-          <div class="news-text">
-            <p>
-              Once upon a time, in an age before the Internet, the only way to
-              meet people was to leave your home and interact with humanity.
-            </p>
-          </div>
-        </div>
-      </article>
+        </section>
 
-      <article class="news-card">
-        <div class="news-preview">
-          <img class="news-preview-img" src="images/last-post4.jpg" alt="breakfast table">
-        </div>
-        <div class="news-info">
-          <ul class="news-category">
-            <li>
-              <a href="#0" class="category">art</a>
-            </li>
-          </ul>
-          <h2 class="news-title">
-            <a href="#0" class="news-title-link">How To Meet That Special Someone</a>
-          </h2>
-          <time class="news-date" datetime="2015-06-14">June 14, 2015</time>
-          <address class="news-autor">by Author Doe</address>
-          <div class="news-text">
-            <p>
-              Considering how long the human race existed before online
-              dating, it looks like meeting people in real life was really
-              working for them.
-            </p>
-          </div>
-        </div>
-      </article>
-
-      <article class="news-card">
-        <div class="news-preview">
-          <img class="news-preview-img" src="images/last-post5.jpg" alt="text printed pillow">
-        </div>
-        <div class="news-info">
-          <ul class="news-category">
-            <li>
-              <a href="#0" class="category">art</a>
-            </li>
-            <li>
-              <a href="#0" class="category">lifestyle</a>
-            </li>
-          </ul>
-          <h2 class="news-title">
-            <a href="#0" class="news-title-link">How To Meet That Special Someone</a>
-          </h2>
-          <time class="news-date" datetime="2015-06-14">June 14, 2015</time>
-          <address class="news-autor">by Author Doe</address>
-          <div class="news-text">
-            <p>
-              Once upon a time, in an age before the Internet, the only way to
-              meet people was to leave your home and interact with humanity.
-            </p>
-          </div>
-        </div>
-      </article>
-
-      <article class="news-card">
-        <div class="news-preview">
-          <img class="news-preview-img" src="images/last-post6.jpg" alt="people stand on a cliff">
-        </div>
-        <div class="news-info">
-          <ul class="news-category">
-            <li>
-              <a href="#0" class="category">travel</a>
-            </li>
-          </ul>
-          <h2 class="news-title">
-            <a href="#0" class="news-title-link">How To Meet That Special Someone</a>
-          </h2>
-          <time class="news-date" datetime="2015-06-14">June 14, 2015</time>
-          <address class="news-autor">by Author Doe</address>
-          <div class="news-text">
-            <p>
-              Considering how long the human race existed before online
-              dating, it looks like meeting people in real life was really
-              working for them.
-            </p>
-          </div>
-        </div>
-      </article>
-
-      <article class="news-card">
-        <div class="news-preview">
-          <img class="news-preview-img" src="images/last-post4.jpg" alt="breakfast table">
-        </div>
-        <div class="news-info">
-          <ul class="news-category">
-            <li>
-              <a href="#0" class="category">art</a>
-            </li>
-          </ul>
-          <h2 class="news-title">
-            <a href="#0" class="news-title-link">How To Meet That Special Someone</a>
-          </h2>
-          <time class="news-date" datetime="2015-06-14">June 14, 2015</time>
-          <address class="news-autor">by Author Doe</address>
-          <div class="news-text">
-            <p>
-              Once upon a time, in an age before the Internet, the only way to
-              meet people was to leave your home and interact with humanity.
-            </p>
-          </div>
-        </div>
-      </article>
-    </div>
-
-    <aside class="right-sidebar">
-      <section class="last-post">
-        <h2 class="last-post-title">recent post</h2>
-
-        <div class="last-post-cards">
-          <article class="post-card">
-            <img class="post-image" src="images/2.jpg" alt="a man walks along the beach">
-            <div class="post-text">
-              <time class="post-date" datetime="2015-06-14">June 14, 2015</time>
-              <h3 class="post-title">
-                <a href="#0" class="post-title-link">Lorem Ipsum now.</a>
-              </h3>
-            </div>
-          </article>
-          <article class="post-card">
-            <img class="post-image" src="images/151.jpg" alt="girl doing yoga by the sea">
-            <div class="post-text">
-              <time class="post-date" datetime="2015-06-14">June 14, 2015</time>
-              <h2 class="post-title">
-                <a href="#0" class="post-title-link">Lorem Ipsum Dolor available.</a>
-              </h2>
-            </div>
-          </article>
-          <article class="post-card">
-            <img class="post-image" src="images/45.jpg" alt="Eames Style Lounge Chair and radio">
-            <div class="post-text">
-              <time class="post-date" datetime="2015-06-14">June 14, 2015</time>
-              <h3 class="post-title">
-                <a href="#0" class="post-title-link">Lorem Ipsum available right now.</a>
-              </h3>
-            </div>
-          </article>
-          <article class="post-card">
-            <img class="post-image" src="images/501.jpg" alt="reakfast table">
-            <div class="post-text">
-              <time class="post-date" datetime="2015-06-14">June 14, 2015</time>
-              <h3 class="post-title">
-                <a href="#0" class="post-title-link">Lorem Ipsum available right now.</a>
-              </h3>
-            </div>
-          </article>
-          <article class="post-card">
-            <img class="post-image" src="images/7.jpg" alt="three girls under window">
-            <div class="post-text">
-              <time class="post-date" datetime="2015-06-14">June 14, 2015</time>
-              <h3 class="post-title">
-                <a href="#0" class="post-title-link">Lorem Ipsum available right now.</a>
-              </h3>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <form class="search">
-        <label class="search-group">
-          <span class="visually-hidden">site search</span>
-          <input type="search" class="query" placeholder="Search..." required>
-        </label>
-        <button class="button">
-          <span class="visually-hidden">search</span>
-        </button>
-      </form>
-
-      <section class="newsletter">
-        <h2 class="newsletter-title">newsletter</h2>
-        <form class="newsletter-subscribe">
-          <label class="subscribe-group">
-            <span class="visually-hidden">enter your email address to subscribe</span>
-            <input type="email" class="subscribe" placeholder="Your email address" required>
+        <form class="search">
+          <label class="search-group">
+            <span class="visually-hidden">site search</span>
+            <input type="search" class="query" placeholder="Search..." required />
           </label>
-          <button class="submit">subscribe</button>
+          <button class="button">
+            <span class="visually-hidden">search</span>
+          </button>
         </form>
-      </section>
-      <section>
-        <h2 class="tags-title">tags</h2>
-        <ul class="tags">
-          <li><a class="tag" href="#0">fashion</a></li>
-          <li><a class="tag" href="#0">music</a></li>
-          <li><a class="tag" href="#0">lorem tag</a></li>
-          <li><a class="tag" href="#0">tag</a></li>
-          <li><a class="tag" href="#0">ipsum tag</a></li>
-          <li><a class="tag" href="#0">travel</a></li>
-          <li><a class="tag" href="#0">fashion</a></li>
-          <li><a class="tag" href="#0">music</a></li>
-        </ul>
-      </section>
 
-      <section>
-        <h2 class="sidebar-categories">categories</h2>
-        <ul class="side-categories">
-          <li class="side-category">
-            <a class="side-category-link" href="#0">Beauty</a>
-            <span class="counter">12</span>
-          </li>
-          <li class="side-category">
-            <a class="side-category-link" href="#0">Health</a>
-            <span class="counter">4</span>
-          </li>
-          <li class="side-category">
-            <a class="side-category-link" href="#0">Lifestyle</a>
-            <span class="counter">145</span>
-          </li>
-          <li class="side-category">
-            <a class="side-category-link" href="#0">Music</a>
-            <span class="counter">28</span>
-          </li>
-          <li class="side-category">
-            <a class="side-category-link" href="#0">Sport</a>
-            <span class="counter">62</span>
-          </li>
-          <li class="side-category">
-            <a class="side-category-link" href="#0">Yoga</a>
-            <span class="counter">8</span>
-          </li>
-        </ul>
-      </section>
-    </aside>
-  </div>
-  <section class="products">
-    <h2 class="products-title">наши изделия</h2>
-    <div class="container-products">
-      <div class="products-cards">
-        <div class="products-item">
-          <div class="product-item-img">
-            <img class="product-img" src="images/shop-item-desk1.jpg" alt="">
-          </div>
-          <div class="product-spec">
-            <div class="product-name">подушки на диван</div>
-            <div class="product-spec-text">
-              Набор из двух подушек с модными принтами. Видео о создании
-              <a class="post-link" href="#0">здесь</a>.
+        <section class="newsletter">
+          <h2 class="newsletter-title">newsletter</h2>
+          <form class="newsletter-subscribe">
+            <label class="subscribe-group">
+              <span class="visually-hidden">enter your email address to subscribe</span>
+              <input type="email" class="subscribe" placeholder="Your email address" required />
+            </label>
+            <button class="submit">subscribe</button>
+          </form>
+        </section>
+        <section>
+          <h2 class="tags-title">tags</h2>
+          <ul class="tags">
+            <li><a class="tag" href="#0">fashion</a></li>
+            <li><a class="tag" href="#0">music</a></li>
+            <li><a class="tag" href="#0">lorem tag</a></li>
+            <li><a class="tag" href="#0">tag</a></li>
+            <li><a class="tag" href="#0">ipsum tag</a></li>
+            <li><a class="tag" href="#0">travel</a></li>
+            <li><a class="tag" href="#0">fashion</a></li>
+            <li><a class="tag" href="#0">music</a></li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="sidebar-categories">categories</h2>
+          <ul class="side-categories">
+            <li class="side-category">
+              <a class="side-category-link" href="#0">Beauty</a>
+              <span class="counter">12</span>
+            </li>
+            <li class="side-category">
+              <a class="side-category-link" href="#0">Health</a>
+              <span class="counter">4</span>
+            </li>
+            <li class="side-category">
+              <a class="side-category-link" href="#0">Lifestyle</a>
+              <span class="counter">145</span>
+            </li>
+            <li class="side-category">
+              <a class="side-category-link" href="#0">Music</a>
+              <span class="counter">28</span>
+            </li>
+            <li class="side-category">
+              <a class="side-category-link" href="#0">Sport</a>
+              <span class="counter">62</span>
+            </li>
+            <li class="side-category">
+              <a class="side-category-link" href="#0">Yoga</a>
+              <span class="counter">8</span>
+            </li>
+          </ul>
+        </section>
+      </aside>
+    </div>
+    <section class="products">
+      <h2 class="products-title">наши изделия</h2>
+      <div class="container-products">
+        <div class="products-cards">
+          <div class="products-item">
+            <div class="product-item-img">
+              <img class="product-img" src="images/shop-item-desk1.jpg" alt="" />
             </div>
-            <div class="product-buy">
-              <div class="buy-price">
-                <div class="buy-price-old">1000₽</div>
-                <div class="buy-price-new">800₽</div>
+            <div class="product-spec">
+              <div class="product-name">подушки на диван</div>
+              <div class="product-spec-text">
+                Набор из двух подушек с модными принтами. Видео о создании
+                <a class="post-link" href="#0">здесь</a>.
               </div>
-              <button class="to-shop-btn">в магазин</button>
-            </div>
-          </div>
-        </div>
-        <div class="products-item">
-          <div class="product-item-img">
-            <img class="product-img" src="images/shop-item-desk2.jpg" alt="">
-          </div>
-          <div class="product-spec">
-            <div class="product-name">кукла «зайчик»</div>
-            <div class="product-spec-text">
-              Интерьерная рукодельная кукла «Зайчик», созданию которой
-              посвящена
-              <a class="post-link" href="#0">весенняя серия постов</a> в блоге
-              и несколько подкастов.
-            </div>
-            <div class="product-buy">
-              <div class="buy-price">
-                <div class="buy-price-new">3500₽</div>
+              <div class="product-buy">
+                <div class="buy-price">
+                  <div class="buy-price-old">1000₽</div>
+                  <div class="buy-price-new">800₽</div>
+                </div>
+                <button class="to-shop-btn">в магазин</button>
               </div>
-              <button class="to-shop-btn">в магазин</button>
             </div>
           </div>
-        </div>
-        <div class="products-item">
-          <div class="product-item-img">
-            <img class="product-img" src="images/shop-item-desk3.jpg" alt="">
-          </div>
-          <div class="product-spec">
-            <div class="product-name">шестиугольная рамка</div>
-            <div class="product-spec-text">
-              Необычная рамка для украшения дома из видео
-              <a class="post-link" href="#0">«Как сделать рамку из подручных средств за 30 минут»</a>
+          <div class="products-item">
+            <div class="product-item-img">
+              <img class="product-img" src="images/shop-item-desk2.jpg" alt="" />
             </div>
-            <div class="product-buy">
-              <div class="buy-price">
-                <div class="buy-price-old">500₽</div>
-                <div class="buy-price-new">400₽</div>
+            <div class="product-spec">
+              <div class="product-name">кукла «зайчик»</div>
+              <div class="product-spec-text">
+                Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена
+                <a class="post-link" href="#0">весенняя серия постов</a> в блоге и несколько подкастов.
               </div>
-              <button type="submit" class="to-shop-btn">в магазин</button>
+              <div class="product-buy">
+                <div class="buy-price">
+                  <div class="buy-price-new">3500₽</div>
+                </div>
+                <button class="to-shop-btn">в магазин</button>
+              </div>
+            </div>
+          </div>
+          <div class="products-item">
+            <div class="product-item-img">
+              <img class="product-img" src="images/shop-item-desk3.jpg" alt="" />
+            </div>
+            <div class="product-spec">
+              <div class="product-name">шестиугольная рамка</div>
+              <div class="product-spec-text">
+                Необычная рамка для украшения дома из видео
+                <a class="post-link" href="#0">«Как сделать рамку из подручных средств за 30 минут»</a>
+              </div>
+              <div class="product-buy">
+                <div class="buy-price">
+                  <div class="buy-price-old">500₽</div>
+                  <div class="buy-price-new">400₽</div>
+                </div>
+                <button type="submit" class="to-shop-btn">в магазин</button>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <footer class="footer">
-    <address class="footer-container">
-      <ul class="social">
-        <li class="social-links">
-          <span class="visually-hidden">twitter</span>
-          <a href="#0" class="twitter-link"><img src="svg/004-twitter.svg" alt="twitter logo"></a>
-        </li>
-        <li class="social-links">
-          <span class="visually-hidden">pinterest</span>
-          <a href="#0" class="pinterest-link"><img src="svg/001-pinterest.svg" alt="pinterest logo"></a>
-        </li>
-        <li class="social-links">
-          <span class="visually-hidden">facebook</span>
-          <a href="#0" class="facebook-link"><img class="facebook" src="svg/002-facebook-logo.svg"
-              alt="facebook logo"></a>
-        </li>
-        <li class="social-links">
-          <span class="visually-hidden">instagram</span>
-          <a href="#0" class="instagram-link"><img src="svg/005-instagram.svg" alt="instagram logo"></a>
-        </li>
-        <li class="social-links">
-          <span class="visually-hidden">tumblr</span>
-          <a href="#0" class="tumblr-link"><img src="svg/003-tumblr.svg" alt="tumblr logo"></a>
-        </li>
-      </ul>
-    </address>
+    <footer class="footer">
+      <address class="footer-container">
+        <ul class="social">
+          <li class="social-links">
+            <span class="visually-hidden">twitter</span>
+            <a href="#0" class="twitter-link"><img src="svg/004-twitter.svg" alt="twitter logo" /></a>
+          </li>
+          <li class="social-links">
+            <span class="visually-hidden">pinterest</span>
+            <a href="#0" class="pinterest-link"><img src="svg/001-pinterest.svg" alt="pinterest logo" /></a>
+          </li>
+          <li class="social-links">
+            <span class="visually-hidden">facebook</span>
+            <a href="#0" class="facebook-link"><img class="facebook" src="svg/002-facebook-logo.svg" alt="facebook logo" /></a>
+          </li>
+          <li class="social-links">
+            <span class="visually-hidden">instagram</span>
+            <a href="#0" class="instagram-link"><img src="svg/005-instagram.svg" alt="instagram logo" /></a>
+          </li>
+          <li class="social-links">
+            <span class="visually-hidden">tumblr</span>
+            <a href="#0" class="tumblr-link"><img src="svg/003-tumblr.svg" alt="tumblr logo" /></a>
+          </li>
+        </ul>
+      </address>
 
-    <a href="#0" class="copyright">Copyright © 2009–2016 City Blog LLC.</a>
-  </footer>
-</body>
-
+      <a href="#0" class="copyright">Copyright © 2009–2016 City Blog LLC.</a>
+    </footer>
+  </body>
 </html>
