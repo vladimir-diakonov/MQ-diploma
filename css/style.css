@@ -857,8 +857,8 @@ body {
 	width: calc(100% - 30px);
 	max-width: 1200px;
 	margin-top: 70px;
-	margin-right: 15px;
-	margin-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 .footer-container {
