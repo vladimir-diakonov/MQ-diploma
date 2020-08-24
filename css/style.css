@@ -1383,7 +1383,7 @@ body {
 
 	.trends-card-item {
 		width: 100%;
-		margin: 0;
+		margin: 0 0 3px;
 	}
 
 	.trends-card-item:last-child {
